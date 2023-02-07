@@ -1,6 +1,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+import Footer from '../Components/Footer/Footer'
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -8,6 +9,7 @@ function classNames(...classes) {
 
 export default function Layout(props) {
   return (
+    <>
     <Disclosure as="nav" className="bg-white shadow">
       {({ open }) => (
         <>
@@ -190,5 +192,7 @@ export default function Layout(props) {
         </>
       )}
     </Disclosure>
+      <Footer />
+      </>
   )
 }

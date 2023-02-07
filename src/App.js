@@ -12,6 +12,8 @@ import Footer from "./Components/Footer/Footer";
 import SuspenseFallback from "./Components/SuspenseFallback/SuspenseFallback";
 import ErrorFallback from "./Components/ErrorFallback/ErrorFallback";
 import GigDetails from "./Pages/GigDetails";
+import GigLayout from "./Pages/GigLayout";
+import { NewGig } from './Pages/NewGig';
 
 // lazy loading
 const Login = lazy(() => import("./Pages/Login/Login"));
@@ -49,6 +51,8 @@ const App = () => {
           <Route path="/stats" element={<Stats />} />
           <Route path="/gigs" element={<Gigs />} />
           <Route path="/gig_details" element={<GigDetails />} />
+          <Route path="/gig_layout" element={<GigLayout />} />
+          <Route path="/new_gig" element={<NewGig />} />
         </Routes>
       </Suspense>
       {user && (
