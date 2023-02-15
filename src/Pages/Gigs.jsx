@@ -6,20 +6,7 @@ import FamouseCategories from "../Components/Gig/FamousCategories"
 import TopRated from "../Components/Gig/TopRated"
 import Layout from "./Layout"
 
-/*
-  This example requires some changes to your config:
-  
-  ```
-  // tailwind.config.js
-  module.exports = {
-    // ...
-    plugins: [
-      // ...
-      require('@tailwindcss/aspect-ratio'),
-    ],
-  }
-  ```
-*/
+
 export default function Gigs() {
   return (
     <Layout>
